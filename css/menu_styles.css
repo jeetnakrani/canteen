@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.parallax {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w");
+  height: max-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #f4c95d;
+  font-variant: small-caps;
+  font-size: 100px;
+  font-family: fantasy;
+  letter-spacing: 20px;
+  border-bottom: 5px solid #dd7230;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menu {
+  background: #f4c95d;
+  text-align: center;
+}
+.menu-ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.menu-ul li {
+  font-size: 17px;
+  list-style: none;
+  display: inline-block;
+  padding: 25px 25px 26px 25px;
+}
+.a-menu {
+  text-decoration: none;
+  color: white;
+}
+.menu-ul li:hover {
+  background: #dd7230;
+  transform: scale(1.1);
+}
+.search-box {
+  border: 1px solid white;
+  border-radius: 50px;
+  background: white;
+  width: max-content;
+  display: inline-block;
+  margin: 0px;
+}
+.search-box:hover {
+  box-shadow: 0 0 10px 2px #dd7230;
+  border: 1px solid black;
+}
+.search-input {
+  width: 250px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  margin: 10px 10px 10px 10px;
+}
+i {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.container, .deals-container{
+  margin: 50px 50px 50px 5%;
+  width:90%;
+  text-align: center;
+}
+.categories, .items{
+  width: max-content;
+  margin: 20px;
+  border: 1px solid #f4c95d;
+  border-radius: 0 0 50px 50px;
+  display: inline-block;
+}
+.categories:hover, .items:hover{
+  box-shadow: 0 0 10px 3px #dd7230;
+}
+.item-image{
+  height: 200px;
+  width: 230px;
+  border-radius: 0 0 50px 50px;
+  padding: 10px;
+}
+.image-title{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #854d27;
+}
+a{
+  text-decoration: none;
+}
+.title{
+  padding: 50px;
+  font-size:50px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+.deal{
+  padding: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  max-width: 25%;
+  background: linear-gradient(120deg,#e7e393 20%,#f4c95d 50%,#dd7230 80%);
+}
+.coupon-btn{
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.coupon-btn:hover{
+  box-shadow: 0 0 10px 5px white inset;
+}
+.images{
+  display: inline-block;
+}
+.item-image-size{
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+}
+.description{
+  margin: 20px;
+  min-height: 100px;
+}
+.item-select{
+  margin: 10px 0 0 0;
+}
+.buynow-btn{
+  border:1px solid #854d27;
+  background: #f4c95d;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+.buynow-btn:hover{
+  border: 1px solid #854d27;
+  box-shadow: 0 0 10px 5px #dd7230 inset;
+}

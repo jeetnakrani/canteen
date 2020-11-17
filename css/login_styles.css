@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  line-height: 70px;
+  background: #04030f;
+  border-bottom: 5px solid #dd7230;
+}
+.logo {
+  width: 150px;
+  height: 100px;
+  float: left;
+}
+.loggo{
+  font-size: 60px;
+  color: #f4c95d;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.menu {
+  float: right;
+}
+.menu li {
+  float: left;
+  width: 120px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.menu li a {
+  color: #f4c95d;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.ref:hover{
+  text-decoration: none;
+}
+.ref{
+  color: black;
+}
+
+
+#LoginBody {
+  background-image: url("https://files.guidedanmark.org/files/484/242429_Aarhus-central-fooe-market.jpg?width=1024");
+  background-size: cover;
+}
+.hero {
+  height: 100%;
+}
+.title1{
+  text-align: center;
+}
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: white;
+  padding: 5px;
+  overflow: hidden;
+  border: 3px solid #dd7230;
+}
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #dd7230;
+  border-radius: 30px;
+}
+.button-box2 {
+  width: 90px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #dd7230;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 25px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.toggle-btn2 {
+  padding: 10px 25px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.toggle-btn:focus {
+    outline: none;
+}
+.toggle-btn2:focus {
+    outline: none;
+}
+.mlogin:focus {
+    outline: none;
+}
+.submit-bton:focus {
+    outline: none;
+}
+
+
+
+
+#bton1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #f4c95d, #dd7230);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+#bton2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  background: linear-gradient(to right, #f4c95d, #dd7230);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-bton {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #f4c95d, #dd7230);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box {
+  margin: 10px 10px 10px 10px;
+}
+span {
+  color: black;
+  font-size: 12px;
+  bottom: 60px;
+}
+#login {
+  left: 0px;
+}
+#register {
+  left: 450px;
+  bottom: 200px;
+}
+.box{
+  width: 350px;
+  height: 280px;
+  position: relative;
+  margin: 6% auto;
+  background: white;
+  padding: 5px;
+  overflow: hidden;
+  border: 3px solid #dd7230;
+}
+.mlogin{
+  margin-top: 50px;
+  margin-left: 50px ;
+  margin-right: 50px;
+  width: 70% ;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to right, #f4c95d, #dd7230);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  text-align: center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  
+}
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.cancelbtn {
+  margin: 10px 10px 10px 10px;
+  background-color: #f44336;
+  height: 30px;
+  width: 70px;
+  text-align: center;
+  margin-left: auto;
+  background: linear-gradient(to right, #f4c95d, #dd7230);
+  border-radius: 30px;
+  transition: 0.5s;
+  border: none;
+  bottom: 10px;
+}
+
+

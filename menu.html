@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODXPRESS</title>
+    <link href="css/menu_styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function stickyMenu(){
+            var sticky=document.getElementById('sticky');
+            if(window.pageYOffset > 220){
+                sticky.classList.add('sticky');
+            }
+            else{
+                sticky.classList.remove('sticky');
+            }
+        }
+        window.onscroll= function(){
+            stickyMenu();
+        }
+    </script>
+</head>
+<body>
+   <div class="parallax">
+       <div class="page-title">FoodXpress</div>
+   </div>
+   <div class="menu" id="sticky">
+       <ul class="menu-ul">
+           <a href="#" class="a-menu"><li>Home</li></a>
+           <a href="#deals" class="a-menu"><li>Deals</li></a>
+           <a href="#sandwich" class="a-menu"><li>Sandwich</li></a>
+           <a href="#fastfood" class="a-menu"> <li>Fast Food</li></a>
+           <a href="#chinese" class="a-menu"><li>Chinese</li></a>
+           <a href="#" class="a-menu"><li>Cart</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." id="myinput" name="search" class="search-input" onkeyup="searchFun()"/>
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+    </div>
+   </div>
+   <!--Home Page--> 
+   <div class="container">
+        <a href="#sandwich">
+            <div class="categories">
+                <img src="sandwich1.jpg" alt="sandwich1"  class="item-image"/>
+                <div class="image-title"> Sandwich</div>
+            </div>
+        </a>
+        <a href="#fastfood">
+            <div class="categories">
+                <img src="fastfood.jpg" alt="fastfood1" class="item-image" />
+                <div class="image-title"> Fast Food</div>
+            </div>
+        </a>
+        <a href="#chinese">
+            <div class="categories">
+                <img src="chinese.jpg" alt="chinese1" class="item-image" />
+                <div class="image-title">Chinese</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="deals.jpg" alt="deals1"   class="item-image" />
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+    </div>
+        <!--Deal -->
+            <div class="deals-container" id="deals">
+                <div class="parallax">
+                    <div class="title">Deals</div>
+                </div>
+                <div class="deal">
+                    Save 20% on min-purchase of Rs.100 on Sandwich
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+                <div class="deal">
+                    Save 20% on min-purchase of Rs.100 on Fast Food
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+                <div class="deal">
+                    Save 20% on min-purchase of Rs.100 on Chinese
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+            </div>
+        <!--Deal -->
+        <!--sandwich -->
+            <div class="deals-container" id="sandwich">
+                <div class="parallax">
+                    <div class="title">Sandwich</div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="sandwich/sandwich-grilled.jpg" alt="sandwich-grilled" class="item-image-size"/>
+                    </div>
+                    <div class="description">
+                        <b>Grilled Sandwich</b><br>
+                        <div class="item-select">
+                            Price : Rs.40
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select" >
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="sandwich/sandwich-cheese.jpg" alt="sandwich-cheese" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Cheese Sandwich</b><br>
+                        <div class="item-select">
+                            Price : Rs.50
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="sandwich/sandwich-paneer.jpg" alt="sandwich-grilled" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Paneer Sandwich</b><br>
+                        <div class="item-select">
+                            Price : Rs.60
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="sandwich/sandwich-mayo.jpg" alt="sandwich-grilled" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Mayonnaise Sandwich</b><br>
+                        <div class="item-select">
+                            Price : Rs.60
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        <!--sandwich -->
+        <!--fast food -->
+            <div class="deals-container" id="fastfood">
+                <div class="parallax">
+                    <div class="title">Fast Food</div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/Vada Pav.jpg" alt="Vada Pav" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Vada Pav</b><br>
+                        <div class="item-select">
+                            Price : Rs.15
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/Samosa Pav.jpg" alt="Samosa Pav" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Samosa Pav</b><br>
+                        <div class="item-select">
+                            Price : Rs.15
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/Misal Pav.jpg" alt="Misal Pav" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Misal Pav</b><br>
+                        <div class="item-select">
+                            Price : Rs.40
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/vada misal pav.jpg" alt="vada misal pav" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Vada Misal pav</b><br>
+                        <div class="item-select">
+                            Price : Rs.50
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/pav bhaji.jpg" alt="pav bhaji" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Pav Bhaji</b><br>
+                        <div class="item-select">
+                            Price : Rs.50
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="fastfood/chole bhature.jpg" alt="chole bhature" class="item-image-size" />
+                    </div>
+                    <div class="description">
+                        <b>Chole Bhature</b><br>
+                        <div class="item-select">
+                            Price : Rs.50
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br>
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        <!--fast food -->
+        <!--chinese -->
+        <div class="deals-container" id="chinese">
+            <div class="parallax">
+                <div class="title">Chinese</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chinese/manchurian pav.jpg" alt="manchurian pav" class="item-image-size" />
+                </div>
+                <div class="description">
+                    <b>Manchurian Pav</b><br>
+                    <div class="item-select">
+                        Price : Rs.15
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chinese/dry manchurian.jpg" alt="dry manchurian" class="item-image-size" />
+                </div>
+                <div class="description">
+                    <b>Dry Manchurian</b><br>
+                    <div class="item-select">
+                        Price : Rs.40
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chinese/schezwan rice.jpg" alt="schezwan rice" class="item-image-size" />
+                </div>
+                <div class="description">
+                    <b>Schezwan Rice</b><br>
+                    <div class="item-select">
+                        Price : Rs.60
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chinese/schezwan noodles.jpg" alt="schezwan noodles" class="item-image-size" />
+                </div>
+                <div class="description">
+                    <b>Schezwan Noodles</b><br>
+                    <div class="item-select">
+                        Price : Rs.60
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!--chinese -->
+        
+
+            
+</body>
+</html>

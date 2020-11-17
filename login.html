@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODXPRESS</title>
+    <link href="css/login_styles - Copy.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body id="LoginBody">
+    <div class="navbar">
+        <div class="logo_div">
+            <img src="foodxpress.jpeg" alt="logo" class="logo">
+        </div>
+        <div class="container">
+            <label class="loggo">FoodXpress</label>
+            <div class="navbar_links">
+                <ul class="menu">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="bton1"></div>
+                <button type="button" class="toggle-btn" onclick="login()">LOGIN</button>
+                <button type="button" class="toggle-btn" onclick="register()">REGISTER</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Email Id" required> 
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-bton">LOGIN</button>
+            </form> 
+            <form id="register"  class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="text" class="input-field" placeholder="Branch" required>
+                <select name="year" id="year1">
+                <option value="FE">FE</option>
+                <option value="SE" selected>SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+                </select>
+                <select name="divi" id="divi1">
+                <option value="A">A</option>
+                <option value="B" selected>B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                </select>
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I AGREE</span>
+                <button type="submit" class="submit-bton">REGISTER</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("bton1");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "0px";
+            z.style.left = "110px";
+        }
+         function login() {
+                x.style.left = "0px";
+                y.style.left = "400px";
+                z.style.left = "0px";
+            }
+    </script>
+</body>
+
+</html>
